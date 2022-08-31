@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=PT+Sans+Caption&display=swap');
+
+:root{
+    --darkPurple : #22162b;
+    --russianViolet :#451f55;
+    --royalPurple :#724e91;
+    --wildBlue :#99b2dd;
+    --nonPhotoBlue : #9bd9eb;
+    --celeste :#9dfff9;
+    --white : #cfcece;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* Class */
+
+.inactive{
+    display: none;
+}
+
+/* Class Inicio */
+
+.texto-inicio{
+    margin-top: 150px;
+    font-size: 90px;
+    
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Class Portafolio */
+
+.titulo-portafolio{
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+    color: var(--white);
+    top: 20px;
+    margin: 0 43% 80px;
+
+}
+
+.car1,.car2,.car3{
+    height: 80vh;
+    border: 1px solid var(--celeste);
+}
+
+
+/* Class Resumen */
+.cv{
+    padding: 0 100px ;
+    text-align: center;
+    color: var(--darkPurple);
+    height: 100vh;
+}
+
+.titulo-resumen{
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+    top: 20px;
+    margin: 0 43% 80px;
+
+}
+
+.resumen-parrafo{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    left: 100px;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 24px;
+}
+
+.resumen-left{
+    position: absolute;
+    top: 200px ;
+    text-align: left;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 24px;
+}
+
+.resumen-left h1,h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.resumen-right{
+    position: absolute;
+    top: 200px;
+    text-align: left;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 24px;
+}
+
+.resumen-right h1,h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.resumen-right .cic::after{
+    position: absolute;
+    content: "2019 - 2021";
+    right: 50px;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 23px;
+}
+
+.resumen-right .grunenthal::after{
+    position: absolute;
+    content: "2021 - 2022";
+    right: 50px;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 23px;
+}
+
+.resumen-parrafo p,li{
+    font-family: 'PT Sans Caption', sans-serif;
+
+}
+
+/* Class Contacto */
+
+.titulo-contacto{
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+    color: var(--darkPurple);
+    top: 20px;
+    margin: 0 43% 80px;
+
+}
+
+.formulario-contacto{
+    position: absolute;
+    left: 100px;
+}
+
+.formulario-contacto label{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 23px;
+}
+
+.formulario-contacto input{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 20px;
+    height: 60px;
+}
+
+.formulario-contacto textarea{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 20px;
+}
+
+/* .mapa-google{
+    position: absolute;
+    right: 100px;
+    top: 300px;
+} */
+
+.boton-enviar{
+    background-color: transparent;
+    color: var(--darkPurple);
+    border-radius: 5px;
+    height: 60px;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.boton-enviar:hover{
+    background-color: var(--darkPurple);
+    color: var(--white);
+    transition: 0.4s ease-out all;
+}
+
+/* ID */
+
+#nav-menu{
+    position: fixed;
+    min-height: 100vh;
+    background-color: var(--darkPurple);
+    width: 250px ;
+    padding-right: 10px;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+#inicio{
+    background: var(--russianViolet);
+    margin-left: 250px;
+}
+
+#portafolio{
+    background: linear-gradient(180deg,var(--russianViolet) 0%,var(--royalPurple)50%,var(--wildBlue)100%);
+    margin-left: 250px;
+}
+
+#resumen{
+    background: linear-gradient(180deg,var(--wildBlue) 0%,var(--nonPhotoBlue)50%,var(--celeste)100%);
+    margin-left: 250px;
+    color: var(--darkPurple);
+    
+}
+
+#contacto{
+    background: var(--celeste);
+    min-height: 85vh;
+    margin-left: 250px;
+    color: var(--darkPurple);
+}
+
+#footer{
+    background-color: var(--darkPurple);
+    min-height: 15vh;
+    margin-left: 250px;
+}
+
+/* pseudoelemento */
+#nav-menu a{
+    margin-right: 20px;
+    font-size: 25px;
+    border-bottom: 1px solid var(--royalPurple);
+
+    color: var(--nonPhotoBlue);
+	margin-top: 10%;
+	text-shadow:
+		0 0 5px var(--royalPurple),
+		0 0 10px var(--royalPurple),
+		0 0 20px var(--royalPurple),
+		0 0 40px var(--russianViolet),
+		0 0 80px var(--russianViolet),
+		0 0 90px var(--russianViolet),
+		0 0 100px var(--russianViolet),
+		0 0 140px var(--russianViolet),
+		0 0 180px var(--russianViolet)
+}
+
+::-webkit-scrollbar{
+    width: 30px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, var(--darkPurple)20% , var(--wildBlue));
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--darkPurple);
+    box-shadow: #22162b;
+}
+
+.texto-inicio{
+    animation: flicker 2.5s infinite alternate;
+    color: var(--white);	
+}
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px var(--royalPurple),
+        0 0 11px var(--royalPurple),
+        0 0 19px var(--royalPurple),
+        0 0 40px var(--russianViolet),
+        0 0 80px var(--russianViolet),
+        0 0 90px var(--russianViolet),
+        0 0 100px var(--russianViolet),
+        0 0 150px var(--russianViolet)    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+#inicio span{
+    font-size: 40px;
+}
+
+/* Hover */
+
+#nav-menu a:hover{
+    transform: scale(1.3);
+}
+
+#inicio span:hover{
+    transform-style: var(--celeste);
+    cursor: pointer;
+   
+}
+
+/* MediaQuery */
+@media screen and (min-height:1250px) {
+    #inicio-div{
+        position: absolute;
+        top: 300px;
+        left: 100px;
+        width: 1100px;
+        height: 700px;
+    }
+    
+}
