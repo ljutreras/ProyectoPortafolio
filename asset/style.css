@@ -184,24 +184,27 @@ body{
 }
 
 #inicio{
-    background: var(--russianViolet);
+    background-image: url("./img/galaxia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
     margin-left: 250px;
 }
 
 #portafolio{
-    background: linear-gradient(180deg,var(--russianViolet) 0%,var(--royalPurple)50%,var(--wildBlue)100%);
+    background: linear-gradient(180deg,var(--darkPurple) 0%,var(--russianViolet)50%,var(--royalPurple)100%);
     margin-left: 250px;
 }
 
 #resumen{
-    background: linear-gradient(180deg,var(--wildBlue) 0%,var(--nonPhotoBlue)50%,var(--celeste)100%);
+    background: linear-gradient(180deg,var(--royalPurple) 0%,var(--wildBlue)50%,var(--nonPhotoBlue)100%);
     margin-left: 250px;
     color: var(--darkPurple);
     
 }
 
 #contacto{
-    background: var(--celeste);
+    background: var(--nonPhotoBlue);
     min-height: 85vh;
     margin-left: 250px;
     color: var(--darkPurple);
