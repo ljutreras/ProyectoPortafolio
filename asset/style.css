@@ -11,15 +11,8 @@
     --white : #cfcece;
 }
 
-body{
-    overflow: hidden;
-}
 
-/* Class */
 
-.inactive{
-    display: none;
-}
 
 /* Class Inicio */
 
@@ -52,32 +45,33 @@ body{
     padding: 0 100px ;
     text-align: center;
     color: var(--darkPurple);
-    height: 100vh;
+    height: 100%;
 }
 
 .titulo-resumen{
     position: relative;
     font-family: 'Orbitron', sans-serif;
     top: 20px;
-    margin: 0 43% 80px;
+    margin: 0 43%;
 
 }
 
 .resumen-parrafo{
-    position: absolute;
-    top: 100px;
+    position: relative;
+    top:40px;
     right: 100px;
-    left: 100px;
+    margin-left: 10%;
     font-family: 'PT Sans Caption', sans-serif;
     font-size: 24px;
 }
 
 .resumen-left{
-    position: absolute;
-    top: 200px ;
+    position: relative;
+    top: 100px ;
     text-align: left;
     font-family: 'PT Sans Caption', sans-serif;
     font-size: 24px;
+    border: 1px solid transparent;
 }
 
 .resumen-left h1,h3 {
@@ -85,11 +79,12 @@ body{
 }
 
 .resumen-right{
-    position: absolute;
-    top: 200px;
+    position: relative;
+    top: 100px;
     text-align: left;
     font-family: 'PT Sans Caption', sans-serif;
     font-size: 24px;
+    border: 1px solid transparent;
 }
 
 .resumen-right h1,h3 {
@@ -138,11 +133,12 @@ body{
     font-size: 23px;
 }
 
+
 .formulario-contacto input{
     font-family: 'PT Sans Caption', sans-serif;
     font-size: 20px;
-    height: 60px;
 }
+
 
 .formulario-contacto textarea{
     font-family: 'PT Sans Caption', sans-serif;
@@ -172,6 +168,10 @@ body{
 }
 
 /* ID */
+#inicio-div{
+    margin-top: 12%;
+    
+}
 
 #nav-menu{
     position: fixed;
@@ -189,6 +189,7 @@ body{
     background-repeat: no-repeat;
     background-attachment:fixed;
     margin-left: 250px;
+   
 }
 
 #portafolio{
@@ -256,9 +257,6 @@ body{
     }    
   }
 
-#inicio span{
-    font-size: 40px;
-}
 
 /* Hover */
 
@@ -266,7 +264,7 @@ body{
     transform: scale(1.3);
 }
 
-/* MediaQuery */
+/* INICIO */
 @media screen and (min-height:1250px) {
     #inicio-div{
         position: absolute;
