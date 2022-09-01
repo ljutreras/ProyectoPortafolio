@@ -1,8 +1,7 @@
 window.addEventListener('DOMContentLoaded', (ev)=>{
     
     const boton = document.getElementById("boton-enviar");
-    const botonRegistro = document.getElementById("boton-registro")
-    const registro = document.getElementById("registro")
+    const formulario = document.getElementById("form-contacto");
     boton.addEventListener("click", (ev)=>{
         try{
             let nombre = document.getElementById("nombre").value;
@@ -21,40 +20,15 @@ window.addEventListener('DOMContentLoaded', (ev)=>{
             }
 
             guardarContacto(contacto);
+            formulario.reset();
+
         }catch{
             console.error("Ingresa bien")
 
         }
     })
 
-    botonRegistro.addEventListener("click", (ev)=>{
-        try{
-            let correo = document.getElementById("correo-registro").value;
-            let password = document.getElementById("password").value;
-            let suscriptor = {
-                correo,
-                password,
-                fechaRegistro: (new Date()).toISOString()
-            }
-            
-            guardarSuscriptor(suscriptor)
-            registro.classList("inactive")
-        }catch{
-            console.error("Ingresa bien los datos")
-        }
-    })
-
-
 })
-
-async function guardarSuscriptor(suscriptor){
-    const url = "https://portafolio-330b4-default-rtdb.firebaseio.com/suscriptor.json";
-    const res = await fetch(url,{
-        method: "POST",
-        body: JSON.stringify(suscriptor)
-    });
-    const data = await res.json()
-}
 
 async function guardarContacto (contacto){
     const url = "https://portafolio-330b4-default-rtdb.firebaseio.com/contacto.json";

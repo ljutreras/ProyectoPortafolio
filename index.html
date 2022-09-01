@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./asset/style.css" />
-    <script src="./asset/main.js"></script>
+    <script src="./asset/registro.js"></script>
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -20,14 +20,14 @@
       
     <div id="nav-menu" class="nav shadow-lg">
       <nav class="nav d-grid ms-auto align-content-center">
-        <a class="nav-link text-light mb-2" href="#inicio">Inicio</a>
-        <a class="nav-portafolio nav-link text-light mb-2" href="#portafolio"
+        <a class="nav-link text-light mb-2" href="./index.html">Inicio</a>
+        <a class="nav-portafolio nav-link text-light mb-2" href="./portafolio.html"
           >Portafolio</a
         >
-        <a class="nav-resumen nav-link text-light mb-2" href="#resumen"
+        <a class="nav-resumen nav-link text-light mb-2" href="./rasumen.html"
           >Resumen</a
         >
-        <a class="nav-contacto nav-link text-light mb-2" href="#contacto"
+        <a class="nav-contacto nav-link text-light mb-2" href="./contacto.html"
           >Contacto</a
         >
       </nav>
@@ -52,6 +52,7 @@
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
+      <form action="./index.html">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -75,7 +76,7 @@
                   <label for="password" class="col-form-label"
                     >Contraseña:</label
                   >
-                  <input type="password" class="form-control" id="password"></input>
+                  <input type="password" class="form-control" id="password"/>
                 </div>
               </form>
             </div>
@@ -87,12 +88,13 @@
               >
                 Cancelar
               </button>
-              <button id="boton-registro" type="submit" class="btn btn-success">
+              <button id="boton-registro" type="button" class="btn btn-success">
                 Enviar
               </button>
             </div>
           </div>
         </div>
+      </form>
       </div>
       <div id="inicio-div" class=" min-vh-100 position-absolute ms-5 ">
         <p class="texto-inicio">
@@ -103,185 +105,6 @@
       </div>
     </div>
     </div>
-    <div id="portafolio" class="position-relative min-vh-100">
-      <h1 class="titulo-portafolio">Portafolio</h1>
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide"
-        data-bs-ride="false"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active car1">
-            <img src="..." class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item car2">
-            <img src="..." class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item car3">
-            <img src="..." class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-    <div id="resumen" class="position-relative min-vh-100">
-      <div class="cv">
-        <h1 class="titulo-resumen">Resumen</h1>
-        <p class="resumen-parrafo">
-          Desarrollador Full Stack Java Jr, busco especializarme en el área de
-          investigación y desarrollo, en mi experiencia, he realizado el rol de
-          líder en trabajo de equipo, me especializo en el área de orientación
-          al detalle y código limpio como también en habilidades técnicas como
-          lo es Java, Spring Boot, Html y CSS.
-        </p>
-        <div class="row">
-          <div class="resumen-left position-relative col-lg-6">
-            <h1 class="mb-5">Estudio</h1>
-            <h2><strong>Generation Chile</strong></h2>
-            <p>Bootcamp Desarrollador FullStack Java Junior</p>
-
-            <h3 class="mt-5">Frontend</h3>
-            <ul class="ms-5 mb-4">
-              <li>Desarrollo frontend con REACT</li>
-              <li>Manejo de HTML5 y CSS3</li>
-              <li>Diseño con BOOTSTRAP</li>
-              <li>JavaScript</li>
-            </ul>
-            <h3>Backend</h3>
-            <ul class="ms-5 mb-4">
-              <li>Diseño e implementación de algoritmos JAVA.</li>
-              <li>Desarrollo de REST API utilizando Spring Boot</li>
-              <li>Integración con base de datos utilizando JPA</li>
-              <li>Manejo de SQL (MYSQL)</li>
-            </ul>
-            <h3>Otras herramientas</h3>
-            <ul class="ms-5 mb-4">
-              <li>Versionamiento de código con Git en Github</li>
-              <li>Metodologías ágiles SCRUM (Trello)</li>
-              <li>Manejo de IDE (INTELLIJ IDEA, VSCode)</li>
-              <li>DBEAVER (MYSQL)</li>
-              <li>Linux (Ubuntu 20.04.4)</li>
-            </ul>
-          </div>
-          <div class="resumen-right position-relative col-lg-6">
-            <h1 class="mb-5">Laboral</h1>
-            <h2 class="mt-4 cic"><strong>CIC S.A.</strong></h2>
-            <p>Operario de produccion</p>
-            <h3 class="mt-3">Actividad</h3>
-            <p class="ms-5 mb-5">
-              Fabricación de estructuras de madera de una cama, se promueve el
-              trabajo en equipo, la mejora continua de la calidad de las bases
-              fabricadas, ademas de la orientación al detalle y el orden de
-              trabajo para una labor eficiente.
-            </p>
-            <h2 class="mt-5 grunenthal"><strong>GRUPO GRÜNENTHAL</strong></h2>
-            <p>Operario de produccion II</p>
-            <h3 class="mt-3">Actividad</h3>
-            <p class="ms-5 mb-4">
-              Fabricación de productos farmacéuticos, se trabaja en base a la
-              orientación al detalle debido al peso, dureza, humedad, entre
-              otros. Se adquiere habilidad de trabajo en equipo debido al
-              proceso de fabricación, la confianza y honestidad en la medición
-              de productos.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="contacto" class="position-relative">
-      <h1 class="titulo-contacto">Contacto</h1>
-      <div class="row">
-        <form class="col-5 position-relative formulario-contacto" action="">
-          <label class="form-label" for="">Nombre</label>
-          <input
-            id="nombre"
-            class="form-control mb-4"
-            type="text"
-            placeholder="Ingrese su nombre"
-          />
-          <label class="form-label" for="">Correo</label>
-          <input
-            id="correo"
-            class="form-control mb-4"
-            type="email"
-            placeholder="ejemplo@ejemplo.com"
-          />
-          <label class="form-label" for="">Asunto</label>
-          <input id="asunto" class="form-control mb-4" type="text" />
-          <label class="form-label" for="">Mensaje</label>
-          <textarea
-            class="form-control"
-            name="mensaje"
-            id="mensaje"
-            cols="30"
-            rows="10"
-            placeholder="Escriba su mensaje aquí..."
-          ></textarea>
-          <div class="d-grid mt-4">
-            <button id="boton-enviar" class="btn btn-light mb-5 shadow" type="submit">Enviar</button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div id="footer" class="position-relative"></div>
-    <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
