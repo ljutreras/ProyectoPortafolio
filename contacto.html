@@ -43,11 +43,18 @@
         <input id="correo" class="form-control mb-4" type="email" placeholder="ejemplo@ejemplo.com" />
         <label class="form-label" for="asunto">Asunto</label>
         <input id="asunto" class="form-control mb-4" type="text" />
+        <label >¿En que horario desea ser contactado para una respuesta?</label>
+        <select class="form-select mb-4" name="horario" id="horario">
+          <option selected>Selecciona un horario</option>
+          <option name="horario" value="dia">Mañana 8:00 hrs - 12:00 hrs</option>
+          <option name="horario" value="tarde">Tarde 12:01 hrs - 19:00 hrs</option>
+          <option name="horario" value="noche">Noche 19:01 hrs - 21:00 hrs</option>
+        </select>
         <label class="form-label" for="mensaje">Mensaje</label>
         <textarea class="form-control" name="mensaje" id="mensaje" cols="30" rows="10"
           placeholder="Escriba su mensaje aquí..."></textarea>
         <div class="d-grid mt-4">
-          <button id="boton-enviar" class="enviar" type="button">Enviar</button>
+          <button id="boton-enviar" class="enviar mb-4" type="button">Enviar</button>
         </div>
       </form>
     </section>

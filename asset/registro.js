@@ -1,18 +1,27 @@
 window.addEventListener('DOMContentLoaded', (ev)=>{
     
-    const botonRegistro = document.getElementById("boton-registro");
+    const formulario = document.querySelector(".formulario");
+
    
-    botonRegistro.addEventListener("click", (ev)=>{
+    formulario.addEventListener("submit", (ev)=>{
+        ev.preventDefault();
         try{
+            let nombre = document.getElementById("nombre-registro").value;
+            let telefono = document.getElementById("telefono-registro").value;
             let correo = document.getElementById("correo-registro").value;
-            let password = document.getElementById("password").value;
+            let password = document.getElementById("password-registro").value;
+            let novedades = getCheckbox();
             let suscriptor = {
+                nombre,
+                telefono,
                 correo,
                 password,
+                novedades,
                 fechaRegistro: (new Date()).toISOString()
             }
             
             guardarSuscriptor(suscriptor)
+            formulario.reset();
         }catch{
             console.error("Ingresa bien los datos")
         }
@@ -28,4 +37,13 @@ async function guardarSuscriptor(suscriptor){
         body: JSON.stringify(suscriptor)
     });
     const data = await res.json()
+}
+
+function getCheckbox() {
+    let checkSeleccionado = document.querySelector("input[name='checkbox']:checked");
+    if ( checkSeleccionado == null ) {
+        throw new Error("Debe seleccionar una opcion");
+    }
+    const checked = checkSeleccionado.value;
+    return checked;
 }

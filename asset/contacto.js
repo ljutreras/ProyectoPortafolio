@@ -11,10 +11,12 @@ window.addEventListener('DOMContentLoaded', (ev)=>{
             if (nombre.length<3) {
                 throw new Error("El nombre es demasiado corto")
             }
+            let horario = getHorario()
             let contacto = {
                 nombre,
                 correo,
                 asunto,
+                horario,
                 mensaje,
                 fechaRegistro: (new Date()).toISOString()
             }
@@ -37,4 +39,13 @@ async function guardarContacto (contacto){
         body: JSON.stringify(contacto)
     });
     const data = await res.json()
+}
+
+function getHorario() {
+    let horarioSeleccionado = document.querySelector("option[name='horario']:checked");
+    if ( horarioSeleccionado == null ) {
+        throw new Error("Debe seleccionar una opcion");
+    }
+    const horario = horarioSeleccionado.value;
+    return horario;
 }
