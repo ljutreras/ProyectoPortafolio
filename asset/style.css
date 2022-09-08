@@ -11,6 +11,7 @@
     --white : #cfcece;
 }
 
+
 /* Class Inicio */
 
 .texto-inicio{
@@ -204,13 +205,14 @@
 
 #contacto{
     background: var(--nonPhotoBlue);
-    height: 100vh;
+    min-height: 100vh;
+    min-width: none;
     margin-left: 230px;
     color: var(--darkPurple);
 }
 #registro{
     background: var(--nonPhotoBlue);
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     margin-left: 230px;
     color: var(--darkPurple);
