@@ -32,8 +32,11 @@
 
 }
 
-.car1,.car2,.car3{
+
+.car1,.car2{
+    
     height: 80vh;
+    width: auto;
     border: 1px solid var(--celeste);
 }
 
@@ -194,6 +197,12 @@
 #portafolio{
     background: linear-gradient(180deg,var(--darkPurple) 0%,var(--russianViolet)50%,var(--royalPurple)100%);
     margin-left: 230px;
+}
+
+#carrusel{
+    width: 30vw;
+    margin-left: 10%;
+    
 }
 
 #resumen{
