@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', (ev)=>{
             let telefono = document.getElementById("telefono-registro").value;
             let correo = document.getElementById("correo-registro").value;
             let password = document.getElementById("password-registro").value;
-            let novedades = getCheckbox();
+            let novedades = getRadio();
             let suscriptor = {
                 nombre,
                 telefono,
@@ -39,8 +39,8 @@ async function guardarSuscriptor(suscriptor){
     const data = await res.json()
 }
 
-function getCheckbox() {
-    let checkSeleccionado = document.querySelector("input[name='checkbox']:checked");
+function getRadio() {
+    let checkSeleccionado = document.querySelector("input[name='radio']:checked");
     if ( checkSeleccionado == null ) {
         throw new Error("Debe seleccionar una opcion");
     }

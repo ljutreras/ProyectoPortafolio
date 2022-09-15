@@ -11,6 +11,9 @@
     --white : #cfcece;
 }
 
+.inactive{
+    display: block;
+}
 
 /* Class Inicio */
 
@@ -180,6 +183,24 @@
     font-size: 25px;
 }
 
+#nav-menu-responsive{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    display: none;
+    justify-content: flex-start;
+
+}
+#nav-menu-responsive-closed{
+
+    position: relative;
+    background-color: transparent;
+    border: none;
+    display: none;
+    justify-content: flex-start;
+
+}
+
 #nav-menu a{
     text-decoration: none;
 }
@@ -265,9 +286,9 @@
         0 0 150px var(--russianViolet)    
     }
     
-    20%, 24%, 55% {        
+    /* 20%, 24%, 55% {        
         text-shadow: none;
-    }    
+    }     */
   }
 
 
@@ -280,7 +301,12 @@
 
 /* Media */
 @media screen and (max-width: 820px) {
+    #nav-menu-responsive{
+        display: flex;
+    }
+   
     #header{
+        display: none;
         position: relative;
         height: auto;
         width: 100%;
@@ -301,6 +327,9 @@
     #contacto, #portafolio, #resumen, #registro{
         width: auto;
         margin: 0;
+    }
+    #carrusel{
+        width: 80%;
     }
     
 }
