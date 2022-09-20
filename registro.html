@@ -43,6 +43,17 @@
       <img src="./asset/img/menu-icon.png" alt="botonHamburguesa" width="100px">
     </button>
     <h1 class="titulo-formulario">Registro</h1>
+    <div id="form-suscripcion-exito" class="alert alert-success" role="alert" style="display: none;">
+      <ul>
+          
+      </ul>
+  </div>
+
+  <div id="form-suscripcion-error" class="alert alert-danger" role="alert" style="display: none;">
+      <ul>
+          
+      </ul>
+  </div>
     <section class="row">
       <form class="col-8 position-relative formulario">
         <label for="nombre-registro" class="form-label">Nombre</label>
@@ -50,11 +61,11 @@
         <label for="telefono-registro" class="form-label">Telefono</label>
         <input type="tel" id="telefono-registro" class="form-control mb-4" placeholder="9875xxxxx">        
         <label for="correo-registro" class="form-label">Correo</label>
-        <input type="email" id="correo-registro" class="form-control mb-4" placeholder="ejemplo@dominio.com">       
+        <input type="email" id="correo-registro" class="form-control mb-4" placeholder="ejemplo@dominio.com" required>       
         <label for="password-registro" class="form-label">Contraseña</label>
-        <input type="password" class="form-control mb-4" id="password-registro" placeholder="*******">      
+        <input type="password" class="form-control mb-4" id="password-registro" placeholder="*******" required>      
         <label class="form-label">¿Le gustaría recibir novedades por correo?</label>
-        <p class="form-label"><input name="radio" type="radio" value="SI" checked> SI</p>
+        <p class="form-label"><input name="radio" type="radio" value="SI" > SI</p>
         <p class="form-label"><input name="radio" type="radio" value="NO" > NO</p>
         
         <button class="enviar" id="boton-registro" type="submit">Enviar</button>

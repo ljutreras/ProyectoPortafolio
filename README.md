@@ -20,11 +20,10 @@ Portafolio personal creado en base a HTML, CSS y JS, la utilizacion del DOM como
 
 Modifique el HTML agregando proyectos en el carousel, creacion de @Media en CSS ademas de la creacion de un selector con los valores enviados a FIREBASE correctamente conectado, se limpia un poco el codigo eliminando bootstrap y utilizando CSS para su aprendizaje de mejor manera
 
-## Por Hacer
+## Actividad 3
 
-Creacion de un nav-bar oculto en js y css
-Documentar codigo
-Estilizar Carousel
+Se crea la validación por parte de JS junto a las alertas de Bootstrap para los diferentes atributos, se corrige fondo cortado de la pagina Index, aún quedan mejoras por hacer las cuales agregaré en las siguientes versiones.
+
 
 https://ljutreras.github.io/ProyectoPortafolio/
 
