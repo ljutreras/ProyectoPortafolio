@@ -215,6 +215,10 @@
    
 }
 
+#index{
+    overflow-y: hidden;
+}
+
 #portafolio{
     background: linear-gradient(180deg,var(--darkPurple) 0%,var(--russianViolet)50%,var(--royalPurple)100%);
     margin-left: 230px;
