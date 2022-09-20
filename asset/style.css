@@ -240,7 +240,6 @@
 #contacto{
     background: var(--nonPhotoBlue);
     min-height: 100vh;
-    min-width: none;
     margin-left: 230px;
     color: var(--darkPurple);
 }
