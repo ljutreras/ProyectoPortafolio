@@ -46,7 +46,7 @@ async function guardarContacto (contacto){
 }
 
 function getHorario() {
-    let horarioSeleccionado = document.querySelector("option[name='horario']:checked");
+    let horarioSeleccionado = document.querySelector("option[class='horario']:checked");
     if ( horarioSeleccionado == null ) {
         throw new Error("Debe seleccionar un horario");
     }
